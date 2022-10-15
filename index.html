@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 
-<!-- The bootstrap compontents I added are: .btn-group, .nav and .nav-tab -->
-
+<!-- The bootstrap compontents I added are: .btn-group, .nav, .nav-tab, and .dropdown-menu -->
+<!-- The sections I added are Related Experience and Activities -->
+<!-- I changed some of the background colors and I changed the font to Verdana -->
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -20,6 +21,10 @@
             font-family: 'Verdana';
             scroll-behavior: smooth;
             background-color: lavender; 
+        }
+
+        .dropdown-menu {
+            background-color: lightgoldenrodyellow
         }
 
         .btn-group {
@@ -108,17 +113,24 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <div>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li><a class="nav-link" href="#courses">Courses</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Navigation Menu
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#projects">Projects</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#courses">Courses</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#contact">Contact</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#relatedExperience">Related Experience</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#leadership&activities">Leadership & Activities</a></li>
+                </ul>
+            </div>
         </div>
+
     </nav>
+    
 
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
@@ -239,9 +251,92 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+            <a href="#relatedExperience" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Related Experience"></i></a> </div>
     </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="relatedExperience">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Related Experience</h4>
+        </div>
+        <div>
+            <h5 class="display-5 mx-auto faded text-center">Frontline Dads</h5>
+        </div>
+        <div>
+            <h5 class="display-5 mx-auto faded text-center">Last summer and fall, I worked for a non-profit in Philadelphia called Frontline Dads where I was working on creating a new database system for their different programs, including
+                their food distribution program, mentoring program, social justice reform program, etc. I used SQL, Wix.com, and excel while I was working there. I also helped them give
+                out food in certain Philly areas, and worked at a booth at Made in America to get people to sign up to volunteer and sell t-shirts.
+            </h5>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#activities" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Activities"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="activities">
+        <h4 class="display-4 font-weight-bold mx-auto text-center">Leadership & Activities</h4>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="activities" type="button" data-toggle="dropdown">Organization's I'm Involved in
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#letsbake">Let's Bake and Breathe TU</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#computingmachinery">Association for Computing Machinery-Women</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#mathematics">Association for Women in Mathematics</a></li>
+            </ul>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#letsbake" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Let's Bake and Breathe TU"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="letsbake">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Let's Bake and Breathe TU</h4>
+        </div>
+        <div>
+            <h5 class="display-5 mx-auto faded text-center">I'm the Member Relations Coordinator for the baking club at Temple, Let's Bake and Breathe TU. I'm in charge 
+                of letting new members in the club. When members join through Owl Connect I add them to the Google Contact. Also I update the points sheet after each general <body>
+                    meeting and activity we do becasue we give points to each member for attendance, helping set up, etc. And we give out a prize at the end of the semester for 
+                    the member with the most points. I also attend STARS workshops to increase the number of stars the club has. 
+            </h5>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#computingmachinery" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Association for Computing Machinery-Women"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="computingmachinery">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Association for Computing Machinery-Women</h4>
+        </div>
+        <div>
+            <h5 class="display-5 mx-auto faded text-center">I'm a member of the Association for Computiong Machinery-Women which is an
+                organization for women in CIS majors.
+                </body>
+            </h5>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#mathematics" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Association for Women in Mathematics"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="mathematics">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Association for Women in Mathematics</h4>
+        </div>
+        <div>
+            <h5 class="display-5 mx-auto faded text-center">I'm a member of the Association for Women in Mathematics, which is an
+                organization for women in math-related majors.
+            </h5>
+        </div>
+    </div>
+
+
+    <div class="row mt-5 next">
+        <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                title="Contact"></i></a> </div>
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
@@ -262,6 +357,7 @@
             <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
         </div>
     </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -274,9 +370,12 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script>
+        $(document).ready(function() {
+            $(".dropdown-toggle").dropdown();
+        });
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-        })
+        });
     </script>
 </body>
 
